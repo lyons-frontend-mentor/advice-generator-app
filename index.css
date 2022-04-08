@@ -33,7 +33,6 @@ body {
   box-sizing: border-box;
 
   position: relative;
-  margin-top: 4rem;
   /* 30px = button radius */
   margin-bottom: calc(30px + 1rem);
   width: clamp(35vw, 35ch, 90vw);
@@ -119,6 +118,5 @@ body {
 }
 
 .attribution {
-  bottom: -2rem;
   color: var(--light-cyan);
 }
