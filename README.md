@@ -8,8 +8,8 @@ Write a card component which displays a quote from the Advice Slip API. The user
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- See the solution [here](https://www.frontendmentor.io/solutions/solution-that-waits-for-new-quotes-SkFc2gR7q).
+- See the live site [here](https://lyons-frontend-mentor.github.io/advice-generator-app/).
 
 ### Built with
 
