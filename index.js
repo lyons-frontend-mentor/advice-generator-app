@@ -3,7 +3,9 @@
 const headerStart = document.getElementById('caps');
 headerStart.innerText = headerStart.innerText.toUpperCase();
 
-// Click handler for button
+
+
+// Click handler for fetching quote
 async function getAdvice(e) {
   e.preventDefault();
 
@@ -17,8 +19,6 @@ async function getAdvice(e) {
   idSpan.innerText = id;
   textSpan.innerText = advice;
 }
-
-// Add click handler to button
 const buttonWrapper = document.getElementById('card-button');
 buttonWrapper.addEventListener("click", (e) => {
   // Get the actual advice
@@ -34,6 +34,8 @@ buttonWrapper.addEventListener("click", (e) => {
     buttonWrapper.title = 'Fetch next quote';
   }, 2000);
 });
+
+
 
 // Window resize handler for changing divider image
 function changeDivider() {
