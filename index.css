@@ -26,6 +26,9 @@ body {
 
   min-height: 100vh;
 
+  /* No content should be overflowing */
+  overflow: hidden;
+
   background-color: var(--dark-blue);
 }
 

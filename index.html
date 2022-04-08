@@ -30,7 +30,10 @@
       "<span id="advice-text">Click the button below to get advice.</span>"
     </blockquote>
     <div id="card__divider">
-      <img id="divider-img" src="images/pattern-divider-desktop.svg" alt="">
+      <picture>
+        <source media="(min-width:500px)" srcset="images/pattern-divider-desktop.svg">
+        <img id="divider-img" src="images/pattern-divider-mobile.svg" alt="">
+      </picture>
     </div>
     <div id="card-button" title="Fetch next quote">
       <label for="advice-button" class="hidden">Fetch next quote</label>
