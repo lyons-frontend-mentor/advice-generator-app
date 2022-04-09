@@ -15,10 +15,17 @@ async function getAdvice() {
   idSpan.innerText = id;
   textSpan.innerText = advice;
 }
+
+// Debouncing variable
+let waiting = false;
+
 const buttonWrapper = document.getElementById('card-button');
-buttonWrapper.addEventListener("click", (e) => {
+buttonWrapper.addEventListener("click", () => {
+  if (waiting) return;
+  waiting = true;
+
   // Get the actual advice
-  getAdvice(e);
+  getAdvice();
 
   // Advice Slip API only allows hits every 2 seconds, otherwise it just returns the current quote as a cached result; for user experience, show button as disabled
   buttonWrapper.classList.add('--disabled');
@@ -26,6 +33,8 @@ buttonWrapper.addEventListener("click", (e) => {
 
   // Return button to normal after 2s
   setTimeout(() => {
+    console.log('setting timeout');
+    waiting = false;
     buttonWrapper.classList.remove('--disabled')
     buttonWrapper.title = 'Fetch next quote';
   }, 2000);

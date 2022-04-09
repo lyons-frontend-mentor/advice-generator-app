@@ -32,3 +32,7 @@ For the next few future projects, I will continue to stick to plain HTML/CSS/Jav
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+
+## Acknowledgements
+
+Thanks to [@lipe11](https://www.frontendmentor.io/profile/lipe11) for suggesting debouncing. I was having an issue where rapidly pressing the button was messing up the disabled behavior, which I realize now was due to a silly error: clicking the button was setting multiple timeouts to remove the `--disabled` class, so later button presses would add the class, only for it to be removed by a past timeout.
